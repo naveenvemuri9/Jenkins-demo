@@ -5,7 +5,7 @@ def archive="naveen-svr-${env.BRANCH_NAME.replaceAll(/[^A-Za-z0-9\-]/,"_")}-${en
 properties([
          [$class: 'GithubProjectProperty', 
          displayName: '', 
-         projectUrlStr: 'https://github.com/ModusCreateOrg/GORUCK-app-server/'], 
+         projectUrlStr: 'https://github.com/../'], 
          [$class: 'RebuildSettings', autoRebuild: false, rebuildDisabled: false], 
          pipelineTriggers([upstream('feature/separate-data_fetcher'), 
          githubPush()])
